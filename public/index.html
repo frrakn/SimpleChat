@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app='chatClient'>
+  <head>
+    <link rel='stylesheet' href='./style.css'>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js'></script>
+    <script type='text/javascript' src='https://cdn.socket.io/socket.io-1.2.1.js'></script>
+    <script type='text/javascript' src='./angularscript.js'></script>
+    <title>Chat Client</title>
+  </head>
+  <body>
+    <div class='chatWindow' ng-controller='ChatWindowController as chatWindow'>
+      <div class='chatMessage' ng-repeat='message in chatWindow.messages'>
+        <p>{{message}}</p>
+      </div>
+    </div>
+    <form class='chatInput' ng-controller='ChatInputController as chatInput'>
+      <input type='text' ng-keypress='chatInput.submit($event)' ng-model='chatInput.inputString' placeholder='Text Here...' ng-trim='false'></input>
+    </form>
+  </body>
+</html>

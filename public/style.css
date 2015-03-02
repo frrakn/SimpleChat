@@ -1,0 +1,33 @@
+html, body, h1, h2, h3, h4, ul, ol, li, p, a, input, textarea{
+  font-family: helvetica, sans-serif;
+}
+
+.chatWindow{
+  border: 2px solid #003359;
+  border-radius: 5px;
+  height: 30em;
+  width: 600px;
+  margin: 3em auto 1em auto;
+  overflow-y: auto;
+}
+
+.chatInput{
+}
+
+.chatInput input{
+  display: block;
+  width: 580px;
+  border-radius: 5px;
+  height: 2em;
+  border: 2px solid #003359;
+  padding: 0 10px 0 10px;
+  margin: 0 auto 0 auto;
+}
+
+.chatMessage{
+  background-color: #EEEEEE;
+  padding: 0px 10px 0px 10px;
+  margin: 5px 2px 5px 2px;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+}
